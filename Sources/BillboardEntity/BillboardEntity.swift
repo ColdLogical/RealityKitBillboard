@@ -18,6 +18,8 @@ public class BillboardEntity: Entity {
         public init(orientatedTo arView: ARView) {
                 self.arView = arView
                 super.init()
+
+                subscribeToUpdates(of: arView.scene)
         }
 
 
